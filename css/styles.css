@@ -3174,6 +3174,25 @@ input::-moz-focus-inner {
     margin: 0 1rem;
 }
 
+.s-header__language {
+    height: 4.2rem;
+    line-height: 4.2rem;
+    font-family: var(--font-2);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: white;
+    outline: none;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    position: absolute;
+    right: 9.2rem;
+    top: 1.6rem;
+}
+
+.s-header__flag {
+    font-size: 1rem;
+}
 
 /* ------------------------------------------------------------------- 
  * ## mobile menu toggle
