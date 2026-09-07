@@ -221,21 +221,27 @@
             ]
         });
 
+        // Testimonials: an auto-playing one-up carousel on mobile that
+        // "unslicks" into a static three-column grid from 800px up.
+        // mobileFirst => the base settings apply below 800 (the carousel);
+        // the 800 breakpoint destroys slick so the CSS grid takes over.
         $('.testimonial-slider').slick({
-            arrows: true,
-            dots: false,
+            mobileFirst: true,
+            arrows: false,
+            dots: true,
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            speed: 700,
+            pauseOnHover: true,
             pauseOnFocus: false,
-            autoplaySpeed: 1500,
+            adaptiveHeight: true,
             responsive: [
                 {
-                    breakpoint: 600,
-                    settings: {
-                        arrows: false,
-                        dots: true
-                    }
+                    breakpoint: 800,
+                    settings: 'unslick'
                 }
             ]
         });

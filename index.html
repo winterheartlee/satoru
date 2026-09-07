@@ -15,7 +15,7 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=20260719l">
     <link rel="stylesheet" href="css/vendor.css">
 
     <!-- script
@@ -90,33 +90,41 @@
         <div class="row s-hero__content">
             <div class="column">
 
+                <!-- The lockup is width:fit-content, so it takes the
+                     wordmark's width and the tagline justifies to match it. -->
+                <div class="s-hero__lockup">
+
                 <h1>SATORU</h1>
                 <div class="s-hero__content-about">
 
                     <p>
-                    MUSIC&nbsp; /&nbsp; SOUND&nbsp; /&nbsp; MIND&nbsp; /&nbsp; EMOTION
+                        <span>MUSIC</span><span class="sep">/</span><span>SOUND</span><span class="sep">/</span><span>MIND</span><span class="sep">/</span><span>EMOTION</span>
                     </p>
-    
+
                 </div>
 
-            </div>
-        </div>
+                <!-- Sits inside the text column so it always follows the
+                     tagline in block flow and can never overlap it. -->
+                <div class="s-hero__video">
+                    <!-- Desktop View: open in Lity lightbox modal -->
+                    <a class="s-hero__video-link glass-pill s-hero__video-desktop" href="https://www.youtube-nocookie.com/watch?v=4JsWysFC1aY" data-lity="">
+                        <span class="glass-pill__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 12l-18 12v-24z"/></svg>
+                        </span>
+                        <span class="glass-pill__text">WATCH VIDEO</span>
+                    </a>
+                    <!-- Mobile View: open directly in native YouTube app / new tab -->
+                    <a class="s-hero__video-link glass-pill s-hero__video-mobile" href="https://youtu.be/4JsWysFC1aY" target="_blank" rel="noopener">
+                        <span class="glass-pill__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 12l-18 12v-24z"/></svg>
+                        </span>
+                        <span class="glass-pill__text">WATCH VIDEO</span>
+                    </a>
+                </div>
 
-        <div class="s-hero__video">
-            <!-- Desktop View: open in Lity lightbox modal -->
-            <a class="s-hero__video-link glass-pill s-hero__video-desktop" href="https://www.youtube-nocookie.com/watch?v=4JsWysFC1aY" data-lity="">
-                <span class="glass-pill__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 12l-18 12v-24z"/></svg>
-                </span>
-                <span class="glass-pill__text">WATCH VIDEO</span>
-            </a>
-            <!-- Mobile View: open directly in native YouTube app / new tab -->
-            <a class="s-hero__video-link glass-pill s-hero__video-mobile" href="https://youtu.be/4JsWysFC1aY" target="_blank" rel="noopener">
-                <span class="glass-pill__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 12l-18 12v-24z"/></svg>
-                </span>
-                <span class="glass-pill__text">WATCH VIDEO</span>
-            </a>
+                </div> <!-- end s-hero__lockup -->
+
+            </div>
         </div>
 
         <div class="s-hero__scroll">
@@ -144,104 +152,169 @@
             </div>
 
             <div class="column large-12 s-about__editorial">
-                <div class="magazine-page">
-                    <div class="magazine-header" data-aos="fade-up">SATORU — AWAKENING — KNOWING</div>
-                    
-                    <h1 class="display-1 display-1-feature" data-aos="fade-up">
+                <article class="magazine-page">
+
+                    <!-- masthead -->
+                    <header class="mag-masthead" data-aos="fade-up">
+                        <div class="mag-masthead__row">
+                            <span>Satoru</span>
+                            <span class="mag-masthead__centre">Awakening&nbsp;&mdash;&nbsp;Knowing</span>
+                            <span>Est. MMXXV</span>
+                        </div>
+                    </header>
+
+                    <!-- headline -->
+                    <h1 class="mag-headline" data-aos="fade-up">
                         Step into a realm where sound becomes sensation, and music dares to ask the questions words cannot.
                     </h1>
 
-                    <div class="magazine-columns">
-                        <div class="color-box color-1-bg" data-aos="fade-up">
-                            <p class="lead">
-                                <strong>Satoru</strong> is an <em>immersive sonic pilgrimage</em> crafted by visionary music producer <strong>Lee House</strong> and internationally acclaimed harpist <strong>Catrin Finch</strong>.<br><br>It fuses the timeless purity of experimental harp with deeply textured, electronically manipulated soundscapes and spoken word, dissolving the boundaries between sound, self, and silence.
-                            </p>
-                        </div>
-
-                        <h3 class="magazine-subhead" data-aos="fade-up">Biographies</h3>
-
-                        <div class="magazine-img-wrapper" data-aos="fade-up">
-                            <img src="images/mag-1.jpg" class="about-img about-block-img img-1" alt="Catrin Finch">
-                        </div>
-                        
-                        <p data-aos="fade-up">
-                            <strong>Catrin Finch</strong> is a cultural icon in Wales and one of the world’s foremost harpists, celebrated for her bold artistry and pioneering spirit.<br><br>Trained in the classical tradition, she has carved a path that defies convention, blending the purity of the harp with a diverse array of musical genres and global influences. As a proud LGBTQ+ artist, Catrin brings authenticity, depth, and a fearless creative voice to every project she touches.
-                        </p>
-                        
-                        <div class="magazine-img-wrapper" data-aos="fade-up">
-                            <img src="images/mag-2.jpg" class="about-img about-block-img img-2" alt="Lee House">
-                        </div>
-                        
-                        <div class="color-box color-2-bg" data-aos="fade-up">
-                            <p>
-                                <strong>Lee House</strong> has been a dynamic presence in the music industry since 2011, with genre-spanning productions amassing over <strong>50 million streams</strong> on Spotify.<br><br>After graduating with the highest distinction ever awarded in his Music Production course, Lee became a sought-after producer and engineer at Acapela Studio. It was here that fate aligned him with Catrin Finch, sparking a creative partnership that would evolve from producing albums to mesmerizing live performances.
-                            </p>
-                        </div>
-                        
-                        <h3 class="magazine-subhead" data-aos="fade-up">What to expect...</h3>
-
-                        <p data-aos="fade-up">
-                            Our modern lives are filled with endless distractions. Our thoughts are a constant stream of inner verbalization, endlessly narrating every event, dwelling on memories of a past that is no longer here, and worrying about possible outcomes of the future.<br><br><strong>Satoru</strong> was designed as an antidote to this noise. We developed the music and spoken words to alter the listener's state of consciousness, bringing them into direct awareness of the present moment. 
-                        </p>
-
-                        <div class="color-box color-1-bg" data-aos="fade-up">
-                            <p>
-                                It is an invitation to step out of contextual labeling and inner analysis, and into a direct relationship with what is happening right now—the <em>pure, unfiltered experience</em> of "what is." Following the profound response to these explorations, Satoru was founded. 
-                            </p>
-                        </div>
-
-                        <div class="magazine-img-wrapper" data-aos="fade-up">
-                            <img src="images/mag-3.jpg" class="about-img about-block-img img-3" alt="Studio Equipment">
-                        </div>
-
-                        <p data-aos="fade-up">
-                            Created with the support of <strong>Arts Council Wales</strong>, Satoru recently debuted to high praise, offering attendees not merely a performance, but a rite of passage.<br><br>You won’t be told what to feel or think. Instead, you are invited to pause, turn inward, and experience a carefully constructed unraveling. Expect to rediscover your connection to the present moment, one resonant note at a time.
-                        </p>
+                    <!-- byline -->
+                    <div class="mag-byline" data-aos="fade-up">
+                        <span>Featuring &mdash; Catrin Finch &amp; Lee House</span>
+                        <span>Supported by &mdash; Arts Council Wales</span>
                     </div>
-                    
-                    <div class="clearfix"></div>
-                    <div class="magazine-footer">ABOUT PAGE — REV NO. 2</div>
-                </div>
+
+                    <!-- opening spread -->
+                    <figure class="mag-fig mag-fig--spread mag-fig--hall" data-aos="fade-up">
+                        <img src="images/mag-4.jpg" alt="Satoru live — the debut performance, lit by candlelight">
+                        <figcaption>
+                            <span>The debut &mdash; an intimate setting, RWCMD</span>
+                            <span class="mag-fig__credit">Satoru, live</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- standfirst -->
+                    <p class="mag-standfirst" data-aos="fade-up">
+                        <strong>Satoru</strong> is an immersive sonic pilgrimage crafted by visionary music producer <strong>Lee House</strong> and internationally acclaimed harpist <strong>Catrin Finch</strong>. It fuses the timeless purity of experimental harp with deeply textured, electronically manipulated soundscapes and spoken word, dissolving the boundaries between sound, self, and silence.
+                    </p>
+
+                    <!-- biographies -->
+                    <h3 class="mag-crosshead" data-aos="fade-up"><span>Biographies</span></h3>
+
+                    <div class="mag-duo" data-aos="fade-up">
+                        <div class="mag-duo__card">
+                            <figure class="mag-fig mag-fig--portrait mag-fig--catrin">
+                                <img src="images/mag-1.jpg" alt="Catrin Finch at the harp">
+                                <figcaption>
+                                    <span>Catrin Finch</span>
+                                    <span class="mag-fig__credit">Harp</span>
+                                </figcaption>
+                            </figure>
+                            <p>
+                                <strong>Catrin Finch</strong> is a cultural icon in Wales and one of the world’s foremost harpists, celebrated for her bold artistry and pioneering spirit. Trained in the classical tradition, she has carved a path that defies convention, blending the purity of the harp with a diverse array of musical genres and global influences. As a proud LGBTQ+ artist, Catrin brings authenticity, depth, and a fearless creative voice to every project she touches.
+                            </p>
+                        </div>
+                        <div class="mag-duo__card">
+                            <figure class="mag-fig mag-fig--portrait mag-fig--lee">
+                                <img src="images/mag-2.jpg" alt="Lee House in the studio">
+                                <figcaption>
+                                    <span>Lee House</span>
+                                    <span class="mag-fig__credit">Production &amp; sound</span>
+                                </figcaption>
+                            </figure>
+                            <p>
+                                <strong>Lee House</strong> has been a dynamic presence in the music industry since 2011, with genre-spanning productions amassing over <strong>50 million streams</strong> on Spotify. After graduating with the highest distinction ever awarded in his Music Production course, Lee became a sought-after producer and engineer at Acapela Studio. It was here that fate aligned him with Catrin Finch, sparking a creative partnership that would evolve from producing albums to mesmerizing live performances.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- what to expect -->
+                    <h3 class="mag-crosshead" data-aos="fade-up"><span>What to expect</span></h3>
+
+                    <div class="mag-body" data-aos="fade-up">
+                        <p class="mag-body__opener">
+                            Our modern lives are filled with endless distractions. Our thoughts are a constant stream of inner verbalization, endlessly narrating every event, dwelling on memories of a past that is no longer here, and worrying about possible outcomes of the future.
+                        </p>
+
+                        <aside class="mag-pullquote">
+                            <p>&ldquo;Not merely a performance, but a rite of passage.&rdquo;</p>
+                        </aside>
+
+                        <p>
+                            <strong>Satoru</strong> was designed as an antidote to this noise. We developed the music and spoken words to alter the listener's state of consciousness, bringing them into direct awareness of the present moment.
+                        </p>
+                        <p>
+                            It is an invitation to step out of contextual labeling and inner analysis, and into a direct relationship with what is happening right now&mdash;the <em>pure, unfiltered experience</em> of &ldquo;what is.&rdquo; Following the profound response to these explorations, Satoru was founded.
+                        </p>
+
+                        <p>
+                            Created with the support of <strong>Arts Council Wales</strong>, Satoru recently debuted to high praise, offering attendees not merely a performance, but a rite of passage.
+                        </p>
+                        <p>
+                            You won’t be told what to feel or think. Instead, you are invited to pause, turn inward, and experience a carefully constructed unraveling. Expect to rediscover your connection to the present moment, one resonant note at a time.<span class="mag-endmark" aria-hidden="true"></span>
+                        </p>
+
+                        <figure class="mag-fig mag-fig--strip mag-fig--studio">
+                            <img src="images/mag-3.jpg" alt="Synthesiser and studio hardware in low light">
+                            <figcaption>
+                                <span>The sound &mdash; deeply textured, electronically sculpted</span>
+                                <span class="mag-fig__credit">In the studio</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- folio -->
+                    <footer class="mag-folio" data-aos="fade-up">
+                        <span>Satoru &mdash; Music&nbsp;/&nbsp;Sound&nbsp;/&nbsp;Mind&nbsp;/&nbsp;Emotion</span>
+                        <span>About &mdash; N&ordm;&nbsp;01</span>
+                    </footer>
+
+                </article>
             </div>
-        <div class="row testimonials">
+        <div class="row s-testimonials-row">
             <div class="column large-12">
-                <div class="testimonial-slider" data-aos="fade-up">
-                    <div class="testimonial-slider__slide">
-                        <p>
-                            "An incredibly profound experience. I lost track of time and space, completely immersed in the beautiful, evolving soundscape."
-                        </p>
-                        <div class="testimonial-slider__author">
-                            <img src="images/avatars/avatar_1.png" alt="Attendee Avatar" class="testimonial-slider__avatar">
-                            <cite class="testimonial-slider__cite">
-                                <strong>Attendee</strong>
-                                <span>Debut Performance</span>
-                            </cite>
+
+                <div class="s-testimonials__head" data-aos="fade-up">
+                    <span class="s-testimonials__eyebrow">Press &amp; Audience</span>
+                    <h3 class="s-testimonials__title">In their words</h3>
+                </div>
+
+                <!-- Desktop: 3-up grid. Mobile: auto-playing slick carousel
+                     (js/main.js unslicks .testimonial-slider at >=800px). -->
+                <div class="testimonial-grid testimonial-slider" data-aos="fade-up">
+
+                    <figure class="quote-card">
+                        <div class="quote-card__media">
+                            <img class="quote-card__img qc-rebecca" src="images/Rebecca_Hardy.jpg" alt="Rebecca Hardy, Head of BAFTA Cymru">
                         </div>
-                    </div>
-                    <div class="testimonial-slider__slide">
-                        <p>
-                            "I have never experienced anything quite like it. The combination of Catrin's delicate harp and Lee's deep electronic textures literally altered my perception."
-                        </p>
-                        <div class="testimonial-slider__author">
-                            <img src="images/avatars/avatar_2.png" alt="Attendee Avatar" class="testimonial-slider__avatar">
-                            <cite class="testimonial-slider__cite">
-                                <strong>Attendee</strong>
-                                <span>Debut Performance</span>
-                            </cite>
+                        <div class="quote-card__body">
+                            <span class="quote-card__mark" aria-hidden="true">&ldquo;</span>
+                            <blockquote class="quote-card__quote">I think that was a highly accomplished auditory immersive experience &mdash; it was like a musical interrogation of the mind.</blockquote>
+                            <figcaption class="quote-card__cite">
+                                <span class="quote-card__name">Rebecca Hardy</span>
+                                <span class="quote-card__role">Director / Head of BAFTA Cymru</span>
+                            </figcaption>
                         </div>
-                    </div>
-                    <div class="testimonial-slider__slide">
-                        <p>
-                            "A deeply moving and meditative journey. The way the sounds gently guided my thoughts into a state of total stillness was truly remarkable."
-                        </p>
-                        <div class="testimonial-slider__author">
-                            <img src="images/avatars/avatar_3.png" alt="Attendee Avatar" class="testimonial-slider__avatar">
-                            <cite class="testimonial-slider__cite">
-                                <strong>Attendee</strong>
-                                <span>Debut Performance</span>
-                            </cite>
+                    </figure>
+
+                    <figure class="quote-card">
+                        <div class="quote-card__media">
+                            <img class="quote-card__img qc-nia" src="images/Nia_Medi.jpg" alt="Nia Medi, Medi PR">
                         </div>
-                    </div>
+                        <div class="quote-card__body">
+                            <span class="quote-card__mark" aria-hidden="true">&ldquo;</span>
+                            <blockquote class="quote-card__quote">I cried at the end&hellip; I feel like I was suspended in space and time for an hour.</blockquote>
+                            <figcaption class="quote-card__cite">
+                                <span class="quote-card__name">Nia Medi</span>
+                                <span class="quote-card__role">Medi PR</span>
+                            </figcaption>
+                        </div>
+                    </figure>
+
+                    <figure class="quote-card">
+                        <div class="quote-card__media">
+                            <img class="quote-card__img qc-attend" src="images/Testimonial_Powerful.jpg" alt="Attendee at the debut performance">
+                        </div>
+                        <div class="quote-card__body">
+                            <span class="quote-card__mark" aria-hidden="true">&ldquo;</span>
+                            <blockquote class="quote-card__quote">I thought it was just really powerful. It&rsquo;s very questioning and brings a humility that we all need right now.</blockquote>
+                            <figcaption class="quote-card__cite">
+                                <span class="quote-card__name">Attendee</span>
+                                <span class="quote-card__role">Debut Performance</span>
+                            </figcaption>
+                        </div>
+                    </figure>
+
                 </div>
             </div>
         </div>
@@ -299,41 +372,58 @@
                     <h3 class="h6">COME AND SEE US LIVE...</h3>
                 </div>
             </div>
-            <div class="column large-12 w-900-stack">
-                <h1 class="display-1" data-aos="fade-up">
-                    <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th>DATE</th>
-                            <th>LOCATION</th>
-                            <th>VENUE</th>
-                            <th>TICKETS</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>08/10/2025</td>
-                            <td>Cardigan, Wales</td>
-                            <td>Theatr Mwldan</td>
-                            <td><a href="https://www.mwldan.co.uk/events/s-a-t-o-r-u-catrin-finch-lee-house" target="_blank"><i class="fas fa-calendar"></i></a></td>
-                          </tr>
-                          <tr>
-                            <td>09/10/2025</td>
-                            <td>Cardiff, Wales</td>
-                            <td>Royal Welsh College of Music & Drama</td>
-                            <td><a href="https://www.rwcmd.ac.uk/events/satoru-catrin-finch-lee-house" target="_blank"><i class="fas fa-calendar"></i></a></td>
-                          </tr>
-                          <tr>
-                            <td>10/10/2025</td>
-                            <td>Caernarfon, Wales</td>
-                            <td>Galeri</td>
-                            <td><a href="https://galericaernarfon.ticketsolve.com/ticketbooth/shows/873673128?_gl=1*1ewwssd*_ga*ODk5MjQ5NDg1LjE3NTQyMjcyNjk.*_ga_9BTFE7X8Y0*czE3NTQyMjcyNjkkbzEkZzEkdDE3NTQyMjczNTgkajU5JGwwJGgw" target="_blank">
-                                <i class="fas fa-calendar"></i></a></td>
-                          </tr>
-                          <!-- More rows for other dates -->
-                        </tbody>
-                      </table>
-                </h1>
+            <div class="column large-12">
+
+                <div class="tour-intro" data-aos="fade-up">
+                    <span class="tour-intro__eyebrow">Two nights only</span>
+                    <p class="tour-intro__line"><span class="tour-phrase">An intimate setting,</span> <span class="tour-phrase">an explorative space,</span> <span class="tour-phrase">a shared experience.</span></p>
+                </div>
+
+                <div class="tour-dates" data-aos="fade-up">
+
+                    <article class="gig">
+                        <div class="gig__when">
+                            <span class="gig__day">21</span>
+                            <span class="gig__monthyear">Nov<em>2026</em></span>
+                        </div>
+                        <div class="gig__detail">
+                            <span class="gig__weekday">Saturday</span>
+                            <h4 class="gig__venue">Coed Hills Rural Arts Space</h4>
+                            <span class="gig__place">Cowbridge, Vale of Glamorgan</span>
+                        </div>
+                        <!-- Box office is a single Ticket Tailor page for all events;
+                             the visitor re-selects the date there. Opens in a new tab
+                             so the site is not lost behind the checkout. -->
+                        <div class="gig__tickets">
+                            <a class="gig__tickets-link" href="https://www.tickettailor.com/events/satoru" target="_blank" rel="noopener">
+                                <i class="fas fa-ticket-alt" aria-hidden="true"></i>
+                                Tickets
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="gig">
+                        <div class="gig__when">
+                            <span class="gig__day">22</span>
+                            <span class="gig__monthyear">Nov<em>2026</em></span>
+                        </div>
+                        <div class="gig__detail">
+                            <span class="gig__weekday">Sunday</span>
+                            <h4 class="gig__venue">Coed Hills Rural Arts Space</h4>
+                            <span class="gig__place">Cowbridge, Vale of Glamorgan</span>
+                        </div>
+                        <!-- Box office is a single Ticket Tailor page for all events;
+                             the visitor re-selects the date there. Opens in a new tab
+                             so the site is not lost behind the checkout. -->
+                        <div class="gig__tickets">
+                            <a class="gig__tickets-link" href="https://www.tickettailor.com/events/satoru" target="_blank" rel="noopener">
+                                <i class="fas fa-ticket-alt" aria-hidden="true"></i>
+                                Tickets
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
             </div>
             <!---
             <div class="column large-6 w-900-stack">
@@ -422,22 +512,31 @@
     <section id="contact" class="s-contact">
     <!-- contact
     ================================================== -->
-        <div class="row narrower s-contact__top h-text-center">
-            <div class="column">
-                <h3 class="h6">Get In Touch</h3>
-                <h1 class="display-1">
-                This musical creation will never be recorded and sold via physical or digital media since part of the 
-                ethos of this project is about creating an intimate setting for drawing people into direct awareness of the present moment.
-                If you would like to discuss a booking then please reach out:
-                </h1>
+        <!-- the same ghosted-wordmark device as About and Tour, reversed out
+             of the green panel — Contact was the only section without it -->
+        <div class="row">
+            <div class="column large-12">
+                <div class="section-title" data-num="CONTACT" data-aos="fade-up">
+                    <h3 class="h6">Get in touch</h3>
+                </div>
             </div>
-        </div> <!-- s-footer__top -->
+        </div>
 
-        <div class="row h-text-center">
-            <div class="column">
-                <p class="s-contact__email">
-                    <a href="mailto:satoruexperience@gmail.com">SatoruExperience@gmail.com</a>
+        <div class="row s-contact__body">
+            <div class="column large-7 tab-12 s-contact__manifesto" data-aos="fade-up">
+                <p class="s-contact__statement">
+                This musical creation will never be recorded and sold via physical or digital media since part of the
+                ethos of this project is about creating an intimate setting for drawing people into direct awareness
+                of the present moment.
                 </p>
+            </div>
+
+            <div class="column large-5 tab-12 s-contact__card" data-aos="fade-up">
+                <span class="s-contact__label">Bookings &amp; enquiries</span>
+                <p class="s-contact__email">
+                    <a href="mailto:satoruexperience@gmail.com">satoruexperience@gmail.com</a>
+                </p>
+                <p class="s-contact__note">If you would like to discuss a booking, please reach out.</p>
             </div>
         </div>
 
@@ -455,7 +554,7 @@
                         <h4 class="h6">Mailing Address:</h4>
         
                         <p>
-                        Office 7 East <br>
+                        Office 7 East, Floor 4 <br>
                         Portland House, Cardiff Bay <br>
                         CF10 5EQ <br>
                         UNITED KINGDOM<br>
@@ -480,8 +579,8 @@
                 <a href="mailto:satoruexperience@gmail.com" class="btn h-full-width">Let's Talk</a>
 
                 <div class="ss-copyright">
-                    <span>Copyright Flare 2020</span> 
-                    <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                    <span>Copyright Satoru 2026</span>
+                    <span>Design by Lee House</span>
                 </div>
             </div>
 
@@ -539,7 +638,7 @@
     ================================================== -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=20260715a"></script>
 
 </body>
 
