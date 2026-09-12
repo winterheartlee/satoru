@@ -5929,3 +5929,125 @@ html.no-csstransitions .s-hero__content {
     color: #6B9362;
 }
 */
+
+
+/* ===================================================================
+ * # cookie consent banner (js/consent.js)
+ *
+ * Fixed to the foot of the viewport, on the ink surface so it reads as
+ * chrome rather than content. Green Accept mirrors the ticket CTA; Reject
+ * is an equal-weight outline (GDPR: refusing must be as easy as accepting).
+ * ------------------------------------------------------------------- */
+.cc-banner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+    background-color: var(--surface-ink);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.35);
+    padding: 2rem 2.4rem;
+}
+
+.cc-banner__inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+}
+
+.cc-banner__text {
+    flex: 1 1 30rem;
+    min-width: 0;
+    margin: 0;
+    font-family: "Newsreader", Georgia, serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.cc-banner__text a {
+    color: var(--color-1-lighter);
+    border-bottom: 1px solid rgba(134, 184, 123, 0.5);
+    white-space: nowrap;
+}
+
+.cc-banner__text a:hover,
+.cc-banner__text a:focus {
+    color: #ffffff;
+}
+
+.cc-banner__actions {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.cc-btn {
+    font-family: var(--font-2);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 1.1rem 2.6rem;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.cc-btn--accept {
+    background-color: var(--color-1-dark);
+    border-color: var(--color-1-dark);
+    color: #fbfaf6;
+}
+
+.cc-btn--accept:hover,
+.cc-btn--accept:focus {
+    background-color: var(--color-1-darker);
+    border-color: var(--color-1-darker);
+    outline: 0;
+}
+
+.cc-btn--reject {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.cc-btn--reject:hover,
+.cc-btn--reject:focus {
+    border-color: rgba(255, 255, 255, 0.7);
+    color: #ffffff;
+    outline: 0;
+}
+
+/* footer privacy / cookie-preferences links */
+.ss-copyright__legal a {
+    color: rgba(255, 255, 255, 0.55);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ss-copyright__legal a:hover,
+.ss-copyright__legal a:focus {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+    .cc-banner {
+        padding: 1.6rem;
+    }
+    .cc-banner__inner {
+        gap: 1.4rem;
+    }
+    .cc-banner__actions {
+        width: 100%;
+    }
+    .cc-btn {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+}

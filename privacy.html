@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<!-- NB (for Lee): this is a solid, honest starting template written to match
+     what the site actually does. It is not legal advice — please read it
+     through and adjust anything that isn't accurate for you before relying on
+     it. Update the "last reviewed" date whenever you change it. -->
+    <meta charset="utf-8">
+
+    <!-- Consent Mode v2 defaults (same as the home page) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'functionality_storage': 'granted',
+        'security_storage': 'granted',
+        'wait_for_update': 500
+      });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-27TCRR5G8D"></script>
+    <script>
+      gtag('js', new Date());
+      gtag('config', 'G-27TCRR5G8D');
+    </script>
+
+    <title>Privacy &amp; Cookies — Satoru</title>
+    <meta name="description" content="How the Satoru website uses cookies and handles your data, and your choices under UK data-protection law.">
+    <meta name="theme-color" content="#0c0c0d">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.satoruexperience.com/privacy.html">
+    <meta name="robots" content="noindex, follow">
+
+    <link rel="stylesheet" href="css/styles.css?v=20260912a">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <style>
+        /* Scoped legal-page layout, on the site's paper surface + type roles. */
+        body { background-color: var(--surface-paper); }
+
+        .legal-header {
+            background-color: var(--surface-ink);
+            padding: 2.4rem 0;
+        }
+        .legal-header__inner {
+            max-width: 78rem;
+            margin: 0 auto;
+            padding: 0 2.4rem;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        .legal-header__brand {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.34em;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            color: #fbfaf6;
+        }
+        .legal-header__back {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.72);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+        }
+        .legal-header__back:hover, .legal-header__back:focus { color: #fff; }
+
+        .legal {
+            max-width: 78rem;
+            margin: 0 auto;
+            padding: 6rem 2.4rem 8rem;
+            color: var(--paper-body);
+        }
+        .legal h1 {
+            font-family: "Bellefair", serif;
+            font-weight: 400;
+            font-size: clamp(3.4rem, 6vw, 5.4rem);
+            line-height: 1.1;
+            color: var(--paper-ink);
+            margin: 0 0 1rem;
+        }
+        .legal__updated {
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--paper-muted);
+            margin-bottom: 4rem;
+        }
+        .legal h2 {
+            font-family: "Newsreader", Georgia, serif;
+            font-weight: 500;
+            font-size: 2.4rem;
+            color: var(--paper-ink);
+            margin: 4.4rem 0 1.4rem;
+        }
+        .legal p, .legal li {
+            font-family: "Newsreader", Georgia, serif;
+            font-size: 1.7rem;
+            line-height: 1.65;
+        }
+        .legal p { margin: 0 0 1.6rem; }
+        .legal ul { margin: 0 0 1.6rem; padding-left: 2.2rem; }
+        .legal li { margin-bottom: 0.8rem; }
+        .legal a { color: var(--color-1-dark); border-bottom: 1px solid rgba(87, 120, 80, 0.4); }
+        .legal a:hover, .legal a:focus { color: var(--paper-ink); }
+        .legal strong { color: var(--paper-ink); }
+
+        .legal__summary {
+            background-color: #ffffff;
+            border: 1px solid var(--paper-hairline);
+            border-left: 4px solid var(--color-1-dark);
+            padding: 2.4rem 2.8rem;
+            margin: 0 0 3.2rem;
+        }
+        .legal__summary p:last-child { margin-bottom: 0; }
+
+        .legal table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 0 1.6rem;
+            font-family: "Newsreader", Georgia, serif;
+        }
+        .legal th, .legal td {
+            text-align: left;
+            vertical-align: top;
+            padding: 1.2rem 1.4rem;
+            border-bottom: 1px solid var(--paper-hairline);
+            font-size: 1.45rem;
+            line-height: 1.5;
+        }
+        .legal th {
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--paper-ink);
+        }
+        .legal__table-wrap { overflow-x: auto; margin: 0 0 1.6rem; }
+
+        .legal__foot {
+            max-width: 78rem;
+            margin: 0 auto;
+            padding: 3rem 2.4rem 5rem;
+            border-top: 1px solid var(--paper-hairline);
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: 0.06em;
+            color: var(--paper-muted);
+        }
+        .legal__foot a { color: var(--paper-ink); border-bottom: 1px solid var(--paper-hairline); }
+    </style>
+</head>
+<body id="top">
+
+    <header class="legal-header">
+        <div class="legal-header__inner">
+            <a class="legal-header__brand" href="index.html">Satoru</a>
+            <a class="legal-header__back" href="index.html">&larr; Back to site</a>
+        </div>
+    </header>
+
+    <main class="legal">
+        <h1>Privacy &amp; Cookies</h1>
+        <p class="legal__updated">Last reviewed — 12 September 2026</p>
+
+        <div class="legal__summary">
+            <p><strong>In short.</strong> This website is run by Satoru. We keep data collection to a minimum.
+            Nothing that isn't strictly necessary runs until you choose <em>Accept</em> on the cookie banner —
+            if you choose <em>Reject</em>, no analytics or marketing cookies are set. You can change your mind
+            at any time using <a href="index.html" data-cc-manage>Cookie preferences</a> in the footer.</p>
+        </div>
+
+        <h2>Who we are</h2>
+        <p>Satoru is a live music project by Catrin Finch and Lee House. For any privacy question, or to exercise
+        your rights below, contact us at <a href="mailto:satoruexperience@gmail.com">satoruexperience@gmail.com</a>.
+        We are the “data controller” for the personal data described here.</p>
+
+        <h2>Cookies and similar technologies</h2>
+        <p>Cookies are small files stored by your browser. We group them as follows, and only the strictly
+        necessary group runs without your consent:</p>
+
+        <div class="legal__table-wrap">
+        <table>
+            <thead>
+                <tr><th>Type</th><th>Purpose</th><th>Set only after you…</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Strictly necessary</strong></td>
+                    <td>Remembers your cookie choice so we don't ask again. No tracking.</td>
+                    <td>Always active (no consent needed)</td>
+                </tr>
+                <tr>
+                    <td><strong>Analytics</strong> — Google Analytics 4</td>
+                    <td>Anonymous, aggregated stats on how the site is used (pages viewed, rough location, device) so we can improve it.</td>
+                    <td>choose <strong>Accept</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Marketing</strong> — Meta Pixel</td>
+                    <td>Measures whether visits from our Facebook/Instagram activity lead to ticket interest, so any advertising is spent well.</td>
+                    <td>choose <strong>Accept</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <p>Until you accept, Google Analytics runs in a restricted “consent mode” that sets no identifying cookies,
+        and the Meta Pixel is not loaded at all.</p>
+
+        <h2>Your choices</h2>
+        <ul>
+            <li><strong>Accept</strong> turns on analytics and marketing cookies.</li>
+            <li><strong>Reject</strong> keeps them off — only the strictly necessary cookie remains.</li>
+            <li>You can withdraw or change consent whenever you like via
+            <a href="index.html" data-cc-manage>Cookie preferences</a> in the site footer, or by clearing this
+            site's data in your browser.</li>
+        </ul>
+
+        <h2>What we collect and why</h2>
+        <p>If you consent to analytics or marketing, Google and Meta may process technical information such as your
+        IP address (used to approximate location, not stored by us), device and browser type, pages viewed and
+        actions taken. We see this only as <strong>aggregated statistics</strong> — we do not identify individual
+        visitors. Our lawful basis for these cookies is your <strong>consent</strong>.</p>
+        <p>If you email us, we process the contents of your message to reply and, where relevant, to arrange a
+        booking. Our lawful basis is our legitimate interest in responding to enquiries.</p>
+
+        <h2>Buying tickets</h2>
+        <p>Tickets are sold through <strong>Ticket Tailor</strong>, a separate service. When you click a “Tickets”
+        button you leave this site for their box office, where their own privacy policy and payment processing
+        apply. We never see or store your card details.</p>
+
+        <h2>Who your data is shared with</h2>
+        <p>We don't sell your data. Where you've consented, it is processed by our analytics and marketing
+        providers — <strong>Google</strong> (Google Analytics) and <strong>Meta</strong> (the Pixel) — acting on
+        our behalf. These companies are based in the United States, so consented data may be transferred there
+        under the safeguards those providers offer (such as the EU–US and UK data-bridge frameworks and standard
+        contractual clauses). Their own policies explain more:
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a> and
+        <a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener">Meta</a>.</p>
+
+        <h2>How long we keep it</h2>
+        <p>Aggregated analytics are retained by Google for a limited period (by default up to 14 months) and then
+        deleted or anonymised. Emails you send are kept only as long as needed to deal with your enquiry.</p>
+
+        <h2>Your rights</h2>
+        <p>Under UK data-protection law you have the right to access the personal data we hold about you, to have it
+        corrected or erased, to object to or restrict its processing, to data portability, and to withdraw consent
+        at any time. To exercise any of these, email
+        <a href="mailto:satoruexperience@gmail.com">satoruexperience@gmail.com</a>.</p>
+        <p>If you're unhappy with how we've handled your data you can complain to the UK regulator, the
+        <a href="https://ico.org.uk/make-a-complaint/" target="_blank" rel="noopener">Information Commissioner's
+        Office (ICO)</a>.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>We may update this page from time to time. When we do, we'll change the “last reviewed” date at the top.</p>
+    </main>
+
+    <div class="legal__foot">
+        <span>Copyright Satoru 2026 &middot; <a href="index.html">Home</a> &middot;
+        <a href="index.html" data-cc-manage>Cookie preferences</a></span>
+    </div>
+
+    <!-- cookie consent + tag gating (shared with the home page) -->
+    <script src="js/consent.js?v=20260912a"></script>
+
+</body>
+</html>

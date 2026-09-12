@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Keep non-public / template pages out of search results
+Disallow: /_dev_button.html
+Disallow: /index-duplicate.html
+Disallow: /styles.html
+
+Sitemap: https://www.satoruexperience.com/sitemap.xml

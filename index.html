@@ -5,9 +5,142 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Satoru</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+
+    <!-- Consent Mode v2 — deny every storage category BEFORE any tag runs, so
+         GA4 sets no cookies until the visitor opts in via the banner (js/consent.js
+         flips these to 'granted' on Accept). Security/functionality stay granted:
+         they're strictly necessary and carry no personal profiling. -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'functionality_storage': 'granted',
+        'security_storage': 'granted',
+        'wait_for_update': 500
+      });
+    </script>
+    <!-- Google tag (gtag.js) — GA4 property G-27TCRR5G8D. Loads in cookieless
+         mode and only stores/measures once consent above is granted. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-27TCRR5G8D"></script>
+    <script>
+      gtag('js', new Date());
+      gtag('config', 'G-27TCRR5G8D');
+    </script>
+
+    <!-- primary SEO
+    ================================================== -->
+    <title>Satoru — Immersive Live Music by Catrin Finch &amp; Lee House</title>
+    <meta name="description" content="An immersive live music experience by harpist Catrin Finch and producer Lee House — experimental harp, electronic soundscapes and spoken word. Live in Cowbridge, 21–22 November 2026.">
+    <meta name="author" content="Satoru">
+    <meta name="theme-color" content="#0c0c0d">
+    <link rel="canonical" href="https://www.satoruexperience.com/">
+
+    <!-- Open Graph (Facebook / Instagram / WhatsApp / LinkedIn share previews)
+    ================================================== -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Satoru">
+    <meta property="og:title" content="Satoru — Immersive Live Music by Catrin Finch &amp; Lee House">
+    <meta property="og:description" content="Step into a realm where sound becomes sensation. Experimental harp, electronic soundscapes and spoken word — live in Cowbridge, 21–22 November 2026.">
+    <meta property="og:url" content="https://www.satoruexperience.com/">
+    <meta property="og:image" content="https://www.satoruexperience.com/images/mag-4.jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="576">
+    <meta property="og:image:alt" content="Satoru performing live by candlelight">
+    <meta property="og:locale" content="en_GB">
+
+    <!-- Twitter / X card
+    ================================================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Satoru — Immersive Live Music by Catrin Finch &amp; Lee House">
+    <meta name="twitter:description" content="Step into a realm where sound becomes sensation. Experimental harp, electronic soundscapes and spoken word — live in Cowbridge, 21–22 November 2026.">
+    <meta name="twitter:image" content="https://www.satoruexperience.com/images/mag-4.jpg">
+    <meta name="twitter:image:alt" content="Satoru performing live by candlelight">
+
+    <!-- structured data — band + the two gigs (Google event rich results)
+    ================================================== -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "Satoru",
+        "url": "https://www.satoruexperience.com/",
+        "image": "https://www.satoruexperience.com/images/mag-4.jpg",
+        "description": "An immersive live music experience fusing experimental harp, electronically manipulated soundscapes and spoken word. Created by harpist Catrin Finch and producer Lee House, with the support of Arts Council Wales.",
+        "genre": ["Ambient", "Experimental", "Contemporary"],
+        "member": [
+          { "@type": "Person", "name": "Catrin Finch" },
+          { "@type": "Person", "name": "Lee House" }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/SatoruExperience/",
+          "https://www.instagram.com/SatoruExperience/",
+          "https://www.youtube.com/@satoruexperience",
+          "https://www.tiktok.com/@satoruexperience"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicEvent",
+        "name": "Satoru — Live",
+        "startDate": "2026-11-21",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "image": "https://www.satoruexperience.com/images/mag-4.jpg",
+        "description": "An intimate setting, an explorative space, a shared experience — Satoru performs live.",
+        "location": {
+          "@type": "Place",
+          "name": "Coed Hills Rural Arts Space",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Cowbridge",
+            "addressRegion": "Vale of Glamorgan",
+            "addressCountry": "GB"
+          }
+        },
+        "performer": { "@type": "MusicGroup", "name": "Satoru" },
+        "organizer": { "@type": "MusicGroup", "name": "Satoru", "url": "https://www.satoruexperience.com/" },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.tickettailor.com/events/satoru",
+          "availability": "https://schema.org/InStock",
+          "priceCurrency": "GBP"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicEvent",
+        "name": "Satoru — Live",
+        "startDate": "2026-11-22",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "image": "https://www.satoruexperience.com/images/mag-4.jpg",
+        "description": "An intimate setting, an explorative space, a shared experience — Satoru performs live.",
+        "location": {
+          "@type": "Place",
+          "name": "Coed Hills Rural Arts Space",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Cowbridge",
+            "addressRegion": "Vale of Glamorgan",
+            "addressCountry": "GB"
+          }
+        },
+        "performer": { "@type": "MusicGroup", "name": "Satoru" },
+        "organizer": { "@type": "MusicGroup", "name": "Satoru", "url": "https://www.satoruexperience.com/" },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.tickettailor.com/events/satoru",
+          "availability": "https://schema.org/InStock",
+          "priceCurrency": "GBP"
+        }
+      }
+    ]
+    </script>
 
     <!-- mobile specific metas
     ================================================== -->
@@ -15,13 +148,12 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/styles.css?v=20260719l">
+    <link rel="stylesheet" href="css/styles.css?v=20260912a">
     <link rel="stylesheet" href="css/vendor.css">
 
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
-    <!-- <script defer src="js/fontawesome/all.min.js"></script> -->
 
     <!-- favicons
     ================================================== -->
@@ -581,6 +713,7 @@
                 <div class="ss-copyright">
                     <span>Copyright Satoru 2026</span>
                     <span>Design by Lee House</span>
+                    <span class="ss-copyright__legal"><a href="privacy.html">Privacy &amp; Cookies</a> &middot; <a href="#" data-cc-manage>Cookie preferences</a></span>
                 </div>
             </div>
 
@@ -639,6 +772,8 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js?v=20260715a"></script>
+    <!-- cookie consent + tag gating (loads Meta Pixel / grants GA only on opt-in) -->
+    <script src="js/consent.js?v=20260912a"></script>
 
 </body>
 
