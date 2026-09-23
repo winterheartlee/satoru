@@ -1,6 +1,9 @@
 # macOS
 .DS_Store
 
+# Windows
+Thumbs.db
+
 # local dev / throwaway comparison sheets
 _dev_*
 
