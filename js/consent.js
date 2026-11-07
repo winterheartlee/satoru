@@ -19,7 +19,7 @@
   "use strict";
 
   var STORAGE_KEY = "satoru_cookie_consent"; // 'granted' | 'denied'
-  var PIXEL_ID = "1821960069008970";
+  var PIXEL_ID = "1735180628612848";
   var pixelLoaded = false;
 
   function readChoice() {
